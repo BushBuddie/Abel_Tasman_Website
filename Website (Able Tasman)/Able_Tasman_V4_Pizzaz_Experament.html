@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'/>
+    <title>Able Tasman - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');      
+    
+    body{
+            background-color: rgb(255, 255, 255);
+            font-family: 'Raleway', sans-serif;
+            font-size: 100%;
+            margin:0;
+        }
+       
+        
+    h1{ 
+        font-family: 'Raleway', sans-serif;
+        }
+        
+    h2{ 
+        font-family: 'Raleway', sans-serif;
+        }
+        
+    h3{ 
+        font-family: 'Raleway', sans-serif;
+        }
+        
+    h4{ 
+        font-family: 'Raleway', sans-serif;
+        }
+        /* --- layout --- */
+        
+        .main-box{
+            max-width: 750px;
+            position: relative;
+            margin: 0px auto;
+            box-sizing: border-box;
+            border: 1px solid rgb(255,255,255);
+            padding: 4em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+        }
+        .head-box{
+            max-width: 1300px;
+            position: relative;
+            padding: 0px;
+            margin: 0px auto;
+            box-sizing: border-box;
+            font-size: 150%;       
+        }
+        .img-responsive{
+            max-width: 100%;
+            border: 2px solid rgb(255,255,255);
+            display: block;
+            box-sizing: border-box;
+            margin: auto;
+           
+        }
+        
+        /* --- Navigation bar --- */
+        
+        .navigation-container{
+            background-color: rgb(248, 227, 182);
+            border: 0px solid rgb(255,255,255);
+        }
+        
+        .nav{
+            background-color: rgb(248, 227, 182);
+            list-style: none;
+            padding: 0%;
+            margin: 0%;
+            border: 0px solid rgb(255,255,255);
+            text-align: center;
+        }
+        .nav li{
+            display: inline;
+            position: relative;
+            
+        }
+        
+        .nav li a{
+            /*padding: 0.5em;*/
+            padding: 0.7%;
+            display: inline-block;
+            border: 1px solid rgb(0,0,0);
+            width: 14%;
+        }
+         a:link{
+            text-decoration: none;
+            color: rgb(0,0,0);
+        }
+        
+        a:visited{
+            color: rgb(0,0,0);
+        }
+        
+        a:hover{
+            background-color: rgb(223, 193, 139);
+        }
+        /* --- Tile over image --- */
+        .sub{
+            background-color: rgba(255,255,255,0.0);
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            left:0%;
+            transform: translate(0,-50%);
+            box-sizing: border-box;
+            text-align: center;
+            color: rgb(255,255,255);
+            font-size:2em;
+        }
+        
+        .both{
+            max-width: 600px;
+            margin:auto;
+            border: none;
+            overflow: hidden;
+            
+        }
+        
+        .col{
+            border: none;
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+            
+        }
+        /*iframe sizing*/
+        iframe{
+                 width:100%;
+             }
+        /*image gallary*/
+    .slider {
+        width: 100%;
+        background-color: blue;
+        border: 2px solid rgb(255,255,255);
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        position:relative;
+      }
+      .image-container {
+        width:300%;
+        /*height:100%;*/
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -100%;
+      }
+      #slide-3:target ~ .image-container {
+        left: -200%;
+      }
+      .buttons {
+        position: absolute;
+        top:100%;
+        left:50%;
+          transform: translate(-50%, -100%);
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: rgb(223, 193, 139);
+      }
+        
+    /*media query atempt*/ 
+        
+@media only screen and (max-width: 750px) {
+    .nav{
+            padding: 0px;
+            border: 0px;
+            margin: 0px
+        }
+    .nav li{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            width:100%;
+        }
+    .nav li a{
+            padding: 0.5em;
+            display: inline-block;
+            /*border: 1px solid rgb(0,0,0);*/
+            width: 100%;
+            background-color: rgb(248, 227, 182);
+    }
+    a:hover{
+            background-color: rgb(223, 193, 139)!important;
+        }
+    .sub{
+        font-size:1em;
+    }
+    .head-box{
+        padding: 0px;
+        border: 0px;
+        margin: 0px
+    }
+
+     }
+       
+        
+    </style>
+    
+</head>
+<body>
+    <div class="head-box">
+    <div class=sub>
+   Abel Tasman
+    </div>
+    <img class="img-responsive" src="images/Beach_Final_2.jpg" alt="This is an image of a beach">
+    </div>
+    
+    
+   
+    <div class="navigation-container">
+    <ul class="nav">
+        <li><a href="#Day 1">Day 1</a></li>
+        <li><a href="#Day 2">Day 2</a></li>
+        <li><a href="#Day 3">Day 3</a></li>
+        <li><a href="#Day 4">Day 4</a></li>
+        <li><a href="#Day 5">Day 5</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+    </ul>
+    </div>
+       <br>
+    <div class="main-box">    
+    <h3>Information</h3>
+    <h4>The Abel Tasman is a great walk of New Zealand located in the Abel Tasman national park. The Abel Tasman was named after Abel Tasman, an early European settler to New Zealand. The park has been open to the general public since 1942. The Department of Conservation (DOC) is responsible for maintaining the park and is responsible for pest eradication and forest restoration in the area. The track is around 60km long and attracts nearly 35,000 people to the area each year.</h4>
+ 
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77671.23128358755!2d172.9905749536503!3d-40.90424983189935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3c7bd8bab978db%3A0x2f6e6ee9f4542b5d!2sAbel%20Tasman%20Coast%20track%2C%20Tasman!5e0!3m2!1sen!2snz!4v1660254375576!5m2!1sen!2snz"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <h3 id="Day 1">Day 1</h3>
+    <p>For the first day of the trip we chose to kayak. We packed our gear into the front and back of the kayaks and set off, it was quite a misty day with occasional showers resulting in not the best visibility.  On our way we took a detour to Adele Island where we were greeted with amazing bird life that could be heard from all around. Once we reached the hut we cooked on the fire and settled in for an early night.</p>
+    
+    <img class="img-responsive" src="images/Grace_in_Kayak_C_2.jpg" alt="This is an image of Grace in a kayak"> 
+    
+    <h3 id="Day 2">Day 2</h3>
+    <p>We woke up early to cross the mud flats during low tide, if you are planning on walking the Abel Tasman you should check the tide timetables beforehand to make sure that the crossings are safe and passable. The rest of the day was an undulating walk through bush connecting various beaches. We reached the hut just in time to avoid the heavy rain that started at about mid day. Again we all huddled around the fire to keep nice and warm and dry out our clothes.</p>
+    
+    <div class="both">
+    <div class="col">
+    <img class="img-responsive" src="images/Mushroom2.jpg" alt="This is an image of a Mushroom"> 
+    </div>
+        
+    <div class="col">
+    <img class="img-responsive" src="images/Walking.jpg" alt="This is an image of walkers on the track"> 
+    </div>
+        </div>
+
+    <h3 id="Day 3">Day 3</h3>
+    <p>We had a lovely sunny day. In contrast to our last few days of tramping we could now see more clearly the beautiful landscape we were in. We took a detour to a beach to pick up some gear that had been dropped off for the rest of the trip, This resulted in us having to scramble up a hill on a smaller path to get back on the main track. We had dehydrated meals for dinner as we watched the tide fill the inlet. </p>
+    
+    <img class="img-responsive" src="images/Boardwalk.jpg" alt="This is an image of a boardwalk">
+    
+    <img class="img-responsive" src="images/Extra_walk_day.jpg" alt="This is an image of a view form the track">
+    
+    <h3 id="Day 4">Day 4</h3>
+    <p>We woke up early to cross the inlet. I would highly recommend bringing water shoes as I don’t think that Grace's duct tape jandals are going to take off. We walked past many beaches throughout the day and stopped for lunch and a swim, it was great but our bags were attacked by Weka. We walked past the bay where we were catching the ferry out on day 5 and walked around Separation point to Whaiwharangi hut. I thought I saw something swimming in the water at the beach near the hut so I rushed in to swim with it, I can’t quite swim as fast as a seal so I was left in soaking clothes. </p>
+    
+    <img class="img-responsive" src="images/Inlet.jpg" alt="This is an image of a muddy inlet"> 
+    
+    <img class="img-responsive" src="images/Point.jpg" alt="This is an image of a point">
+    
+    
+    <h3 id="Day 5">Day 5</h3>
+    <p>On  the last day we chose to go over Gibbs hill so we were heading back a different way, as this was not part of the great walk the track was not as well maintained and there was a lot of hill scrambling. We reached the beach for the ferry pick up by midday so we ate lunch and I made a sand-dragon. On the ferry ride back we saw lots of seals in a small cove.</p>
+    
+    <img class="img-responsive" src="images/Hut.jpg" alt="This is an image of a Hut">
+    
+    <img class="img-responsive" src="images/Sand_Dragon.jpg" alt="This is an image of a sand dragon"> 
+    
+    <h3 id="Gallery">Gallery</h3>
+    <div class="slider">
+        
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="Images/Inlet_Tree.jpg" class="slide" style="width:33.333333333%"  >
+        <img src="images/View.JPG" class="slide" style="width:33.3333333333333333%" >
+        <img src="images/Extra_walk_day.jpg" class="slide" style="width:33.3333333333333%" >
+      </div> <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a></div></div>
+   
+    </div>
+    <footer> &copy; Charlotte Cinque</footer>
+</body>
+</html>
